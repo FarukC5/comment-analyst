@@ -1,0 +1,892 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap");
+
+.ui.segment.Search-bar {
+  background-color: #282c34;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  border: 0;
+  border-bottom: 1px solid grey;
+  margin: 1px 1px 0 1px;
+  padding: 13px 0px 13px 0px;
+  border-radius: 0;
+}
+
+#search-bar-text {
+  color: aqua;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+button.ui.button {
+  background-color: initial;
+}
+
+form input {
+  width: 300px;
+  margin: 0;
+  padding: 0;
+}
+
+.ui.input {
+  font-size: xx-large;
+}
+
+form {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+}
+
+.Search-bar p {
+  font-weight: bolder;
+  font-size: initial;
+  color: white;
+  margin: 5px;
+}
+
+.Search-bar button {
+  font-size: initial;
+  border: 1px solid black;
+  font-weight: bolder;
+}
+
+.Video-list {
+  background-color: rgb(17, 166, 216);
+  width: 45%;
+  height: 300px;
+  border: 1px solid grey;
+  margin: 2px;
+}
+
+/*////////////////////////////*/
+
+/* Video player */
+
+.Video-detail {
+  width: 55%;
+  margin: 5px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.Video-player {
+  padding: 1px;
+  margin: 5px 0 0 5px; /* 5 0 0 5*/
+  border: 0px solid black;
+  height: 98%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  align-content: flex-start;
+  color: white;
+}
+
+.Video-player h4 {
+  margin: 15px 0 0 0;
+  padding: 1px;
+  font-weight: bolder;
+  font-size: x-large;
+}
+/* h3*/
+.Video-player h5 {
+  color: indigo; /* indigo */
+  margin: 7px;
+  padding: 0;
+  font-size: x-large;
+  font-weight: normal;
+}
+
+.Video-player p {
+  margin: 10px 0 0 0;
+  padding: 1px;
+  font-size: large;
+}
+
+/* Comment Analyst*/
+
+.add {
+  width: 100%;
+}
+/*
+.Comment-analyst {
+}
+*/
+.Comments-container {
+  background-color: #282c34;
+  height: 400px;
+  overflow: hidden;
+  overflow-y: auto;
+}
+
+.Comments-subContainer {
+  display: flex;
+  border: 1px solid black;
+  padding: 7px;
+}
+
+.Comments-subContainer img {
+  border-radius: 50%;
+  margin: 0px;
+}
+
+.text-container {
+  margin: 8px;
+  overflow: hidden;
+  width: 98%;
+}
+
+.text-container a {
+  color: white;
+  font-size: large;
+}
+
+.text-container p {
+  /*font-size:*/
+  overflow: hidden;
+}
+
+.likes {
+  display: flex;
+  width: 100%;
+  padding-top: 2px;
+  margin: 0px;
+  /* font-size: large;
+ */
+  justify-content: space-between;
+}
+
+#like {
+  margin: 2px;
+}
+
+.thumbUp {
+  /*background: #282c34;
+*/
+  display: flex;
+}
+
+.image1 {
+  border-radius: 50%;
+}
+
+/* KRAJ VIDEO PLAYER  */
+
+/* More videos */
+.Video-item-container {
+  width: 45%;
+  margin: 5px; /*5*/
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Video-item-container h4 {
+  color: cyan;
+  margin: 0;
+  padding: 0;
+  font-size: x-large;
+  font-weight: normal;
+}
+
+/* sadrzi 5 videa*/
+.Video-item-list {
+  width: 100%;
+  margin: 5px;
+  padding: 2px;
+}
+
+/*/////////////////////////////*/
+
+/* VideoItem component*/
+
+#item-image {
+  border-bottom: 2px solid #282c34;
+  border-top: 2px solid #282c34;
+  background-color: #282c34;
+  margin: 0;
+  padding: 0px 0 0px 0;
+}
+
+/*dodavanje */
+
+#video-item {
+  padding: 0;
+  margin: 0 0 4px 0;
+  cursor: pointer;
+  overflow: hidden;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+#item-image {
+  overflow: hidden;
+  overflow-y: auto;
+  position: relative;
+}
+
+#item-content {
+  overflow: hidden;
+  overflow-y: auto;
+  position: relative;
+  height: 100px;
+  margin: 5px 0 0 -18px; /* */
+}
+
+#item-description {
+  overflow: hidden;
+  overflow-y: auto;
+}
+
+/* dodavanje */
+
+#p1 {
+  color: white;
+  font-size: initial;
+  font-weight: bold;
+  margin-bottom: 1px;
+  margin: 0px 5px 10px 0px;
+  padding: 0px;
+  border: 0;
+}
+
+#p2 {
+  color: lightgrey;
+  font-size: initial; /*small*/
+  margin: 2px 5px 0 0px;
+}
+
+#p3 {
+  color: lightgrey;
+  font-size: small;
+  margin: 2px 5px 0 -10px;
+  font-weight: bolder;
+}
+
+.Video-item-image {
+  margin: 0px;
+  padding: 0px;
+}
+
+.Video-item img {
+  margin: 0px 0 0 0;
+  padding: 0px;
+  width: 138px;
+  height: auto;
+}
+
+.Video-item-title {
+  margin: 0px;
+  padding: 0px;
+  width: 90%;
+  color: white;
+}
+
+.Video-item-title p {
+  font-size: 0.79rem;
+  margin-top: 0px;
+  margin: 0 0 2px 0;
+  padding: 0px 0 5px 15px;
+}
+
+.Video-item-title h5 {
+  margin: 0;
+  padding: 0 0 5px 15px;
+  font-size: initial !important;
+}
+
+/* za mobitele*/
+@media only screen and (max-width: 600px) {
+  .ui.segment.Search-bar {
+    background-color: #282c34;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border: 0;
+    width: 100%;
+    padding: 0 0 2% 0;
+    margin: 0;
+    border-bottom: 1px solid gray;
+  }
+
+  #search-bar {
+    align-items: center;
+    position: fixed;
+  }
+
+  #search-bar-text {
+    color: cyan;
+    font-size: 150%;
+    font-weight: normal;
+    border: 0;
+    margin: 0;
+    padding: 0;
+  }
+
+  button.ui.button {
+    background-color: initial;
+  }
+
+  form input {
+    width: 230px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .ui.input {
+    font-size: xx-large;
+  }
+
+  form {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+  }
+
+  .Search-bar p {
+    font-weight: bolder;
+    font-size: initial;
+    color: white;
+    margin: 5px;
+  }
+
+  .Search-bar h3 {
+    font-weight: normal;
+    padding: 0;
+  }
+
+  .Search-bar button {
+    font-size: initial;
+    border: 1px solid black;
+    font-weight: bolder;
+  }
+
+  /*////////////////////////////*/
+
+  /* Video player */
+
+  .Video-detail {
+    width: 99%;
+    margin: 1px;
+    display: flex;
+    align-items: flex-start;
+  }
+
+  .Video-player {
+    padding: 0px;
+    padding-bottom: 2px;
+    /*margin: 1px 0 0 1px; PRVA VRIJEDNOST BEZ FIX search bara*/
+    margin: 21% 0 0 1px;
+    height: 98%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-content: flex-start;
+    color: white;
+    overflow: hidden;
+  }
+
+  .Video-player h4 {
+    margin: 5px 0 0 1px;
+    padding: 1px;
+    font-weight: bolder;
+    font-size: large;
+  }
+
+  .Video-player h3 {
+    color: indigo;
+    padding: 0;
+    margin: 0;
+    height: 0.1px;
+  }
+
+  .Video-player p {
+    margin: 1px 0 0 1px;
+    padding: 1px;
+    padding-bottom: 5px;
+    font-size: small;
+  }
+  /* KRAJ VIDEO PLAYER  */
+
+  /* More videos */
+  .Video-item-container {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    border-top: 1px solid grey;
+    background-color: #282c34;
+  }
+
+  .Video-item-container h4 {
+    color: cyan;
+    margin: 0;
+    padding: 0;
+    font-size: x-large;
+    font-weight: normal;
+  }
+
+  /* sadrzi 5 videa*/
+  .Video-item-list {
+    width: 98%;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  /*/////////////////////////////*/
+
+  /* VideoItem component*/
+  #item-image {
+    width: 100%;
+    margin: 0;
+    padding: 0 0 2px 0;
+    background-color: indigo;
+    display: flex;
+    flex-direction: row;
+  }
+
+  #item-image {
+    margin: 0;
+    padding: 0;
+    margin-top: 0px;
+    align-items: center;
+  }
+
+  #video-item {
+    padding: 0;
+    margin: 0 0 5px 0;
+    cursor: pointer;
+  }
+
+  #video-item-image {
+    margin: 0px;
+    padding: 0px;
+  }
+
+  #item-content {
+    margin: 0px;
+    padding: 0px;
+    height: 87px;
+  }
+
+  #item-description {
+    margin: 5px 0 0 5px;
+    padding: 0;
+  }
+
+  #p1 {
+    color: white;
+    font-size: smaller;
+    font-weight: bold;
+    margin: 0px;
+    padding: 0 0 0 10px; /*0*/
+    border: 0;
+    width: 98%;
+  }
+
+  #p2 {
+    color: lightgrey;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 5px 5px 0 5px; /**/
+    padding: 5px 5px 0 5px;
+  }
+
+  #p3 {
+    color: lightgrey;
+    font-size: small;
+    margin: 10px 0 0 0;
+    font-weight: bolder;
+  }
+
+  .Video-item-image {
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .Video-item img {
+    margin: 0px 0 0 0;
+    padding: 0px;
+    width: 138px;
+    height: auto;
+  }
+
+  .Video-item-title {
+    margin: 0px;
+    padding: 0px;
+    width: 90%;
+    color: white;
+  }
+
+  .Video-item-title p {
+    font-size: 0.79rem;
+    margin-top: 0px;
+    margin: 0 0 2px 0;
+    padding: 0px 0 5px 15px;
+  }
+
+  .Video-item-title h5 {
+    margin: 0;
+    padding: 0 0 5px 15px;
+    font-size: initial !important;
+  }
+
+  /* comments */
+
+  .Comments-container {
+    background-color: #282c34;
+    overflow: hidden;
+    overflow-y: auto;
+  }
+
+  .Comments-subContainer {
+    display: flex;
+    border: 1px solid black;
+    padding: 5px;
+  }
+
+  .Comments-subContainer img {
+    border-radius: 50%;
+    margin: 0px;
+  }
+
+  .text-container {
+    margin-top: 8px;
+    margin-bottom: 0px;
+    overflow: hidden;
+    width: 90%;
+  }
+
+  #auth {
+    padding-bottom: 5px;
+  }
+
+  #text {
+    padding-bottom: 0px;
+  }
+
+  .text-container a {
+    color: white;
+    font-size: large;
+  }
+
+  .text-container p {
+    font-size: small;
+  }
+
+  .likes {
+    display: flex;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    font-size: large;
+    justify-content: space-between;
+  }
+
+  .thumbUp {
+    display: flex;
+    /*background: #282c34;
+  */
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+  }
+
+  .image1 {
+    border-radius: 50%;
+  }
+
+  /*kraj comments*/
+}
+
+/* ZA Ipad i Ipad Pro*/
+
+@media only screen and (min-height: 1024px) {
+  #search-bar {
+    align-items: center;
+    font-size: x-large;
+    position: fixed;
+    width: 100%;
+  }
+
+  #search-bar-text {
+    color: cyan;
+    font-size: 150%;
+    font-weight: normal;
+    border: 0;
+    margin: 0;
+    padding: 0;
+  }
+
+  button.ui.button {
+    background-color: initial;
+    font-size: x-large;
+  }
+
+  form input {
+    margin: 0;
+    padding: 0;
+  }
+
+  .ui.input {
+    font-size: xx-large;
+  }
+
+  form {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+  }
+
+  .Search-bar p {
+    font-weight: bolder;
+    font-size: initial;
+    color: white;
+    margin: 5px;
+  }
+
+  .Search-bar h3 {
+    font-weight: normal;
+    padding: 0;
+  }
+
+  .Search-bar button {
+    font-size: initial;
+    font-weight: bolder;
+  }
+
+  /*////////////////////////////*/
+
+  /* Video player */
+  .Video-detail {
+    width: 100%;
+    margin: 0px;
+    display: flex;
+    align-items: flex-start;
+  }
+  iframe {
+    width: 100%;
+    height: 400px;
+  }
+
+  .Video-player {
+    padding: 0px;
+    padding-bottom: 2px;
+    /*margin: 1px 0 0 1px; PRVA VRIJEDNOST BEZ FIX search bara*/
+    margin: 13% 5px 5px 5px;
+    height: 98%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-content: flex-start;
+    color: white;
+    overflow: hidden;
+  }
+
+  .Video-player h4 {
+    margin: 5px 0 0 1px;
+    padding: 1px;
+    font-weight: bolder;
+    font-size: larger;
+  }
+
+  .Video-player h3 {
+    color: indigo;
+    margin: 0;
+    height: 0.1px;
+  }
+
+  .Video-player p {
+    margin: 1px 0 0 1px;
+    padding: 1px;
+    padding-bottom: 5px;
+    font-size: x-large;
+  }
+
+  /* KRAJ VIDEO PLAYER  */
+
+  /* More videos */
+  .Video-item-container {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    background-color: #282c34;
+    border-top: 1px solid grey;
+  }
+
+  .Video-item-container h4 {
+    color: cyan;
+    margin: 0;
+    padding: 0;
+    font-size: xx-large;
+    font-weight: normal;
+  }
+
+  /* sadrzi 5 videa*/
+  .Video-item-list {
+    width: 98%;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  /*/////////////////////////////*/
+
+  /* VideoItem component*/
+
+  #item-image {
+    width: 100%;
+    margin: 0;
+    padding: 0 0 2px 0;
+    margin-top: 1px;
+    background-color: indigo;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    overflow-y: auto;
+  }
+
+  #video-item {
+    padding: 0px;
+    margin: 0 0 5px 0;
+    cursor: pointer;
+    overflow: hidden;
+    overflow-y: auto;
+  }
+
+  #video-item-image {
+    margin: 0;
+    padding: 0;
+  }
+
+  #item-content {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    overflow-y: auto;
+  }
+
+  #item-description {
+    margin: 5px 0 0 5px;
+    padding: 0;
+    overflow: hidden;
+    overflow-y: auto;
+    position: absolute;
+  }
+
+  #p1 {
+    color: white;
+    font-size: smaller;
+    font-weight: bold;
+    margin: 0;
+    padding: 0; /*0*/
+    padding: 5px 5px 0 10px;
+    border: 0;
+    width: 98%;
+  }
+
+  #p2 {
+    color: lightgrey;
+    font-size: 24px; /*large*/
+    padding: 5px 5px 0 10px; /**/
+  }
+
+  #p3 {
+    color: lightgrey;
+    font-size: small;
+    margin: 10px 0 0 0;
+    font-weight: bolder;
+  }
+
+  .Video-item-image {
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .Video-item img {
+    margin: 0px 0 0 0; /* 5px 0 0 0 */
+    padding: 0px; /* 1px*/
+    width: 138px;
+    height: auto;
+  }
+
+  .Video-item-title {
+    margin: 0px;
+    padding: 0px;
+    width: 90%;
+    color: white;
+  }
+
+  .Video-item-title p {
+    font-size: 0.79rem;
+    margin-top: 0px;
+    margin: 0 0 2px 0;
+    padding: 0px 0 5px 15px;
+  }
+
+  .Video-item-title h5 {
+    margin: 0;
+    padding: 0 0 5px 15px;
+    font-size: initial !important;
+  }
+
+  /* comments*/
+
+  .Comments-container {
+    background-color: #282c34;
+    overflow: hidden;
+    overflow-y: auto;
+  }
+
+  .Comments-subContainer {
+    display: flex;
+    border: 1px solid black;
+    padding: 5px;
+  }
+
+  .Comments-subContainer img {
+    border-radius: 50%;
+    margin: 0px;
+  }
+
+  .text-container {
+    margin: 8px;
+    overflow: hidden;
+    width: 90%;
+  }
+
+  .text-container a {
+    color: white;
+    font-size: large;
+  }
+
+  .text-container p {
+    font-size: large;
+  }
+
+  .likes {
+    display: flex;
+    width: 100%;
+    padding: 2px;
+    margin: 0px;
+    font-size: large;
+    justify-content: space-between;
+  }
+
+  .thumbUp {
+    display: flex;
+    /*background: #282c34;
+    */
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+  }
+
+  .image1 {
+    border-radius: 50%;
+  }
+}
