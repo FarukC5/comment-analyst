@@ -1,10 +1,8 @@
 import React from "react";
 import { Form } from "semantic-ui-react";
 import CommentAnalyst from "./CommentAnalyst";
-//import axios from "axios";
 
-const VideoPlayer = ({ currentVideo, isLoading }) => {
- 
+const VideoPlayer = ({ currentVideo, isLoading, show, setShow }) => {
   return (
     <div className="Video-player">
       <h5>-</h5>
@@ -19,7 +17,7 @@ const VideoPlayer = ({ currentVideo, isLoading }) => {
         <>
           <iframe
             width="100%"
-            height="70%"
+            height="39%"
             src={`https://www.youtube.com/embed/${currentVideo.id.videoId}`}
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -28,13 +26,16 @@ const VideoPlayer = ({ currentVideo, isLoading }) => {
           />
           <h4>{currentVideo.snippet.title}</h4>
           <p>{currentVideo.snippet.description}</p>
-          &nbsp;
           <div className="add">
-          <CommentAnalyst videoId={currentVideo.id.videoId}  />
-        </div>
+            <CommentAnalyst
+              videoId={currentVideo.id.videoId}
+              currentVideo={currentVideo}
+              show={show}
+              setShow={setShow}
+            />
+          </div>
         </>
       )}
-    
     </div>
   );
 };
