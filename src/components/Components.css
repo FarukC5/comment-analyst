@@ -173,6 +173,20 @@ form {
   border-radius: 50%;
 }
 
+.frequent {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+padding-bottom: 10px;
+}
+
+#frequent-item {
+  border: 1px solid black;
+   width: 32.9%; margin: 1px;
+    padding-left:5px; 
+}
+
+
 /* KRAJ VIDEO PLAYER  */
 
 /* More videos */
@@ -410,6 +424,15 @@ form {
     padding-bottom: 5px;
     font-size: small;
   }
+
+  #frequent-item {
+    border: 1px solid black;
+     width: 28.5%; margin: 1px;
+      padding-left:5px; 
+  }
+
+
+
   /* KRAJ VIDEO PLAYER  */
 
   /* More videos */
@@ -705,6 +728,12 @@ form {
     padding: 1px;
     padding-bottom: 5px;
     font-size: x-large;
+  }
+
+  #frequent-item {
+    border: 1px solid black;
+     width: 20%; margin: 1px;
+      padding-left:5px; 
   }
 
   /* KRAJ VIDEO PLAYER  */
