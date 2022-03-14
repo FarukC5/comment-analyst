@@ -35,6 +35,11 @@ function SearchBar(props) {
           icon={{
             name: "search",
           }}
+          onClick={() => {
+            if (props.show === true) {
+              props.setShow(!props.show);
+            }
+          }}
         />
       </form>
     </Segment>
