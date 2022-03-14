@@ -4,10 +4,12 @@ import VideoPlayer from "./VideoPlayer";
 const VideoDetail = ({
   currentVideo,
   isLoading,
+  show,
+  setShow,
 }) => {
   return (
     <div className="Video-detail">
-      <VideoPlayer currentVideo={currentVideo} isLoading={isLoading} />
+      <VideoPlayer currentVideo={currentVideo} isLoading={isLoading} show={show} setShow={setShow} />
     </div>
   );
 };
